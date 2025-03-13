@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@sdijeremy/shared": "^1.0.14",
+    "@sdijeremy/shared": "^1.0.15",
     "express": "^4.21.2"
   },
   "devDependencies": {
