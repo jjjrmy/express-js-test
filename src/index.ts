@@ -7,6 +7,7 @@ const app = express();
 
 // Routes
 app.get("/", (req: Request, res: Response) => {
+  console.log("Hello NodeJS!");
   res.json({ message: "Hello NodeJS!" });
 });
 
