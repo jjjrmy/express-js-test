@@ -1,5 +1,5 @@
 import express, { Request, Response } from "express";
-import { AuthMiddleware } from "@sdijeremy/shared";
+import { ExpressAuthMiddleware } from "@sdijeremy/shared";
 
 const app = express();
 
@@ -8,7 +8,7 @@ app.get("/", (req: Request, res: Response) => {
   res.json({ message: "Hello NodeJS!" });
 });
 
-app.get("/auth-test", AuthMiddleware, (req: Request, res: Response) => {
+app.get("/auth-test", ExpressAuthMiddleware, (req: Request, res: Response) => {
   const user = res.locals.user;
   res.json({ message: "Hello NodeJS!", user });
 });
